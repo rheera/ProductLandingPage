@@ -8,6 +8,9 @@ body {
     left: 0px;
     width: 100%;
 }
+#nav-bar:hover {
+    background: linear-gradient(180deg, rgba(200, 200, 200, 1.0), rgba(200, 200, 200, 0.0));
+}
 nav ul{
     display: grid;
     grid-template-columns: 8fr 1fr 1fr 1fr;
@@ -25,14 +28,18 @@ nav li{
     position: relative;
     top: 0.25em;
 }
+#header-title {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "starter-words starter-words starter-words starter-pic starter-pic starter-pic"
-"video video video video video video"
-"pricing pricing pricing pricing pricing pricing"
-"diagram diagram diagram feature feature feature";
+    "video video video video video video"
+    "feature feature feature feature feature feature"
+    "pricing pricing pricing pricing pricing pricing";
 }
 #starter {
     grid-area: starter-words;
@@ -52,9 +59,10 @@ h1 {
 #product-desc {
     font-size: 0.75em;
     width: 70%;
-    margin-top: 1px;
+    margin-top: 10px;
     text-align: left;
     margin-left: 5rem;
+    letter-spacing: 1px;
 }
 
 #starter-img {
@@ -95,6 +103,7 @@ h1 {
     position: center;
     background: #003049;
     color: ghostwhite;
+    padding: 2em;
 }
 .product-img {
     width: 50%;
@@ -125,4 +134,58 @@ h1 {
     font-size: larger;
     font-weight: 300;
     padding: 10px 10px 10px 10px;
+}
+#features {
+    grid-area: feature;
+    background-image: url("imgs/cityfadedwhite.png");
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: center;
+    padding: 5em;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mini-labelled {
+    width: 60%;
+    height: 60%;
+    margin-top: 4em;
+}
+#features-text {
+    text-align: center;
+    margin-left: 2em;
+}
+#features-title {
+    margin-right: 2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #003049;
+    font-size: larger;
+}
+.feature-titles {
+    color: #003049;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: large;
+}
+.feature-blurbs {
+    padding-inline-start: 20px;
+    font-weight: 400;
+}
+.feature-bullet {
+    padding: 5px 0px;
+}
+#features-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin: 1em;
+    text-align: left;
+    padding: 1em;
 }
