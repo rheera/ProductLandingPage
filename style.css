@@ -35,11 +35,47 @@ nav li{
 .container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas: "starter-words starter-words starter-words starter-pic starter-pic starter-pic"
     "video video video video video video"
     "feature feature feature feature feature feature"
-    "pricing pricing pricing pricing pricing pricing";
+    "pricing pricing pricing pricing pricing pricing"
+    "footer footer footer footer footer footer";
+}
+#form {
+    position: relative;
+    width: 80%;
+    margin-left: 5rem;
+}
+.form-group {
+    display: block;
+}
+#email {
+    position: relative;
+    left: 0;
+    height: 50px;
+    border-radius: 70px;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+    width: 95%;
+    color: #555;
+}
+#submit {
+    text-transform: uppercase;
+    position: absolute;
+    border-radius: 0 70px 70px 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #0050e0 0%, #813bf1 20%, #813bf1 30%, #0050e0 100%);
+    display: inline-block;
+    text-align: center;
+    padding: 14px 20px;
+    letter-spacing: 2px;
+    font-stretch: extra-condensed;
+    color: white;
 }
 #starter {
     grid-area: starter-words;
@@ -73,10 +109,7 @@ h1 {
 }
 
 #form {
-    max-width: 275px;
-    padding: 5px;
-    width: 100%;
-    margin-left: 5rem;
+
 }
 #product-video {
     grid-area: video;
