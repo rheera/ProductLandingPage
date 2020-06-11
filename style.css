@@ -7,6 +7,13 @@ body {
     top: 0px;
     left: 0px;
     width: 100%;
+    background: white;
+}
+hr.nav-line {
+    margin:0;
+    border: none;
+    height: 1px;
+    background-color: #444444;
 }
 #nav-bar:hover {
     background: linear-gradient(180deg, rgba(200, 200, 200, 1.0), rgba(200, 200, 200, 0.0));
@@ -17,16 +24,24 @@ nav ul{
     margin: 0px;
     padding: 5px 0px 5px 30px;
     justify-content: space-around;
+    align-items: center;
 }
 nav li{
     display: inline;
     margin-right: 2rem;
 }
+
+a.nav-link {
+    color: #444444;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 #header-img{
-    height: 1.5em;
+    height: 2em;
     width: auto;
     position: relative;
-    top: 0.25em;
 }
 #header-title {
     font-weight: 800;
@@ -108,9 +123,6 @@ h1 {
     justify-self: end;
 }
 
-#form {
-
-}
 #product-video {
     grid-area: video;
     align-self: center;
@@ -221,4 +233,61 @@ h1 {
     margin: 1em;
     text-align: left;
     padding: 1em;
+}
+
+.site-footer {
+    grid-area: footer;
+}
+.foot-container{
+    background: lightgrey;
+    max-height: 245px;
+    display: flex;
+    padding: 40px 60px;
+    justify-content: space-around;
+    font-size: 11px;
+    font-weight: 500;
+    color: #444444;
+}
+.foot-desc {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.foot-desc-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.3em 0 0 0;
+}
+p.footer-p-title{
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+p.footer-p {
+    margin-top: 0.5em;
+    line-height: 1.5em;
+}
+.foot-cols {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+.footer-col-header {
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.col-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1em 0;
+}
+a.col-links {
+    color: #444444;
+    text-decoration: none;
+}
+a.col-links:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
