@@ -15,9 +15,6 @@ hr.nav-line {
     height: 1px;
     background-color: #444444;
 }
-#nav-bar:hover {
-    background: linear-gradient(180deg, rgba(200, 200, 200, 1.0), rgba(200, 200, 200, 0.0));
-}
 nav ul{
     display: grid;
     grid-template-columns: 8fr 1fr 1fr 1fr;
@@ -36,6 +33,9 @@ a.nav-link {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+a.nav-link:hover {
+    text-decoration: underline;
 }
 
 #header-img{
@@ -91,6 +91,9 @@ a.nav-link {
     letter-spacing: 2px;
     font-stretch: extra-condensed;
     color: white;
+}
+#submit:hover {
+    cursor: pointer;
 }
 #starter {
     grid-area: starter-words;
@@ -179,6 +182,9 @@ h1 {
     font-size: larger;
     font-weight: 300;
     padding: 10px 10px 10px 10px;
+}
+.buy:hover {
+    cursor: pointer;
 }
 #features {
     grid-area: feature;
